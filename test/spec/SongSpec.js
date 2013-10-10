@@ -24,7 +24,7 @@ describe('Song', function() {
     });
   });
 
-  xdescribe('dequeue', function() {
+  describe('dequeue', function() {
     it('triggers a "dequeue" event', function() {
       model.dequeue();
       expect(model.trigger).toHaveBeenCalledWith('dequeue', model);
